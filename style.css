@@ -1,0 +1,33 @@
+h1{
+    color: pink;
+  }
+  
+  h2 {
+    color: purple;
+  }
+  
+  p {
+    color: gray;
+  }
+     
+  ul {
+    border: 2px dashed green;
+  }
+  
+  ol {
+    border: 2px dotted blue;
+  }
+  
+  ol, ul {
+    padding: 5px 20px;
+    border-radius: 4px;
+  }
+     
+  h1, strong {
+    color: pink;
+  }
+  
+  em {
+    color: red;
+  }
+      
