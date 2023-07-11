@@ -26,12 +26,7 @@ h1{
   color: #2a2a2a;
 }
 
-h2{
-  font-family: 'Cinzel Decorative', cursive;
-  color: #2a2a2a;
-}
-
-h3{
+h3, h2{
   font-family: 'Arvo', serif;
   color: #2a2a2a;
 }
@@ -41,7 +36,7 @@ p, input, li {
   color: #2a2a2a;
 }
 
-h1 {
+h1{
   font-size: 4rem;
   text-align: center;
   text-shadow: 2px 2px 5px rgb(152, 255, 134);
