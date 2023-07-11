@@ -2,7 +2,11 @@
 
 
 /* form styling */
-
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+	color: rgb(0, 0, 0) !important;
+	background-color: #ffd5f5 !important;
+	}
 
 #wrapper {
 	width: 60%;
@@ -13,7 +17,62 @@ div#formcol1 {
 	float:left;	
 	width: 100%;
 }
+.reqfield:after {
+	content: "*";
+	color: red;
+	float: right;
+  }
 
+label {
+	width: 130px; /* I made this deliberately wide – come up with your own
+	optimal width */
+	margin: 5px 0;
+	display: inline-block; /* width will not work for “inline” elements such as
+	“label”. Therefore we need to set it to “inline-block” */
+	}
+
+#multchoice label{
+	width: 60px;
+}
+	  
+#formcol1 label {
+	text-align: right;
+	}
+
+#formcol1 li {
+	list-style:none;
+	}
+	
+input[required] {
+	background-color: rgb(255, 255, 255);
+	}
+
+legend{
+	background-color: #001F4A;
+	padding: 0.5rem;
+	font-size: 1.3rem;
+	color: white;
+	}
+
+	fieldset {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	background-color: rgb(240,240,240);
+	}
+
+	#formcol1 input.reqfield {
+	background:#FF9;
+	}
+	  
+input[type=submit]{
+	background-color: #001F4A;
+	color: white;
+	padding: 0.5rem;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+	}
 
 
 /* end of form css */
